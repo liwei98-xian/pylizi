@@ -1,6 +1,6 @@
-a='*'
-n=int(input('请输入一个数字：'))
-for i in range(1,n,2):
-    print((i*'*').center(n-1))
-for i in reversed(range(1,n-2,2)):
-    print((i*a).center(n-1))
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(str(i)+'*'+str(j)+'='+str(i*j),end='      ')
+    print(i)
+    print('')
+    
